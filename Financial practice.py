@@ -126,6 +126,8 @@ How many {assets}s do you want to buy """))
             position_info.to_csv("Investment Postions.csv")
             self.open_positions = position_info
             return self.open_positions
+    def remove_position(self, assets: str|list) -> str|list:
+        pass
 
 David  = Portfolio()
 print(David.add_position("Gold"))
